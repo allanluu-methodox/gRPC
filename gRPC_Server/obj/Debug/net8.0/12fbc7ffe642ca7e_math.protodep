@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Protos/Math.cs \
+obj\Debug\net8.0\Protos/MathGrpc.cs: Protos/math.proto
