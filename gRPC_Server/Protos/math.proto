@@ -18,4 +18,5 @@ message AddRequest {
 // The AddReply message
 message AddReply {
   int32 result = 1;
+  uint32 requestCount = 2;
 }
