@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC_Server";
+
+package calculator;
+
+service Calculator {
+  rpc RunningTotal (stream NumberRequest) returns (stream TotalReply);
+}
+
+message NumberRequest {
+  string user_id = 1;
+  int32 number = 2;
+}
+
+message TotalReply {
+  string user_id = 1;
+  int32 total = 2;
+}
