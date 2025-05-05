@@ -11,7 +11,7 @@ namespace gRPC_Server.Services
             _logger = logger;
         }
 
-        public uint RequestCount = 0;
+        public static uint RequestCount = 0;
 
         // Override the Add method defined in the generated MathBase class
         public override Task<AddReply> Add(AddRequest request, ServerCallContext context)
